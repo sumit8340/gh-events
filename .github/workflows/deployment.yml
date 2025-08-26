@@ -12,7 +12,8 @@ on: push # How to create multipe event [push, workflow_dispatch,]
          #on: 
          #  pullrequest:
          #    types:
-         #      - opened  
+         #      - opened
+         #      - closed
 jobs:      
   deploy:
     runs-on: ubuntu-latest
