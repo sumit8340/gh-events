@@ -1,5 +1,18 @@
 name: Deployment Exercise
-on: push
+on: push # How to create multipe event [push, workflow_dispatch,]
+         
+         # specific branch target for run actions:-
+         # push:
+         #   branches:
+         #     - main
+         #     - 'dev-*'    # example- dev-new dev-this dev-this-is-new
+         #     - 'feat/**'   # example- feat/new feat/new/button
+         
+         # Activity typse trigger:-
+         #on: 
+         #  pullrequest:
+         #    types:
+         #      - opened  
 jobs:      
   deploy:
     runs-on: ubuntu-latest
